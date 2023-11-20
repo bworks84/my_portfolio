@@ -1,12 +1,14 @@
 # Portfolio Project
 
-Welcom to my portfolio site! I'm building out a project to highlight what I've been working on and begin utilizing AWS more!
+Welcome to my portfolio site! I'm building out a website to highlight what I've been working on and begin utilizing AWS more!
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [About Me](#about-me)
 - [Projects](#projects)
+- [TaskList](#task-list)
+- [Notes](#notes)
 
 ## Overview
 
@@ -28,10 +30,14 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 ## Task List
 
-[ ] Update Resume and host on site
-[ ] Build out blog application
-[ ] Finish front-end design of website
-[ ] Host on AWS S3
-[ ] Create new domain
+[ ] Update Resume and host on site.
+
+[ ] Build out blog application.
+
+[ ] Finish front-end design of website.
+
+[ ] Host on AWS S3.
+
+[ ] Create new domain.
 
 # Notes
