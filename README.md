@@ -14,7 +14,7 @@ Welcome to my portfolio site! I'm building out a website to highlight what I've 
 
 I am building out a portfolio site with multiple pages, including a new resume page for the Cloud Resume Challenge, possibly a blog, and more front-end options using React.
 
-I mainly wanted to start building projects as a way to show what I can do and break up the studying....
+I mainly wanted to start building projects as a way to show what I can do and break up the studying for Linux+....
 
 I will host this site on AWS and document my progress/challenges utilizing the blog
 
