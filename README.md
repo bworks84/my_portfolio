@@ -26,7 +26,7 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 ## Projects
 
-- [Project 1](resume.cloudyrob.com) - First Cloud Resume Project
+- [Project 1](https://github.com/bworks84/cloud-resume-challenge) - First Cloud Resume Project
 
 ## Task List
 
