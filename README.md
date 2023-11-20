@@ -28,10 +28,10 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 ## Task List
 
-[] Update Resume and host on site
-[] Build out blog application
-[] Finish front-end design of website
-[] Host on AWS S3
-[] Create new domain
+[ ] Update Resume and host on site
+[ ] Build out blog application
+[ ] Finish front-end design of website
+[ ] Host on AWS S3
+[ ] Create new domain
 
 # Notes
