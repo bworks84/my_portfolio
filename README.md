@@ -30,6 +30,8 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 ## Task List
 
+[x] Push initial stages to new repo. Make README file
+
 [ ] Update Resume and host on site.
 
 [ ] Build out blog application.
