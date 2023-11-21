@@ -1,43 +1,67 @@
-/* Resume.css */
-
-.resume-container {
-  font-family: "Arial", sans-serif;
-  background-color: #f0ece2;
-  color: #333;
-  margin: 0;
-  padding: 20px;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
 }
 
-header {
-  text-align: center;
-  background-color: #6878a0;
+.resume {
+  width: 8.5in; /* Set the width to match the width of a standard letter-sized paper (8.5 inches) */
+  height: 11in; /* Set the height to match the height of a standard letter-sized paper (11 inches) */
+  background-color: #bfbcbc; /* White background color */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(32, 31, 31, 0.1); /* Add a subtle box shadow for depth */
+  padding: 20px; /* Add padding for content inside the resume */
+  margin: 20px; /* Add margin for spacing */
+  /* Add any additional styling you desire */
+}
+
+.title {
+  background-color: #616161; /* Dark grey background color */
+  color: #fff; /* White text color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Padding for content inside the title */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add margin to separate the title from the rest of the content */
+}
+
+.social-icons {
+  margin-top: 1inch; /* One-inch spacing from the title */
+}
+
+.social-icons a {
+  color: #87ceeb; /* Light blue color for icons */
+  margin: 0 1inch; /* One-inch spacing between icons */
+  font-size: 1.5em; /* Adjust the icon size */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #fff; /* Change color on hover */
+}
+
+.sections-container {
+  display: flex;
+}
+
+.left-sections {
+  flex: 1;
+}
+
+.section {
+  background-color: #616161; /* Light grey background color for sections */
+  padding: 10px; /* Padding for content inside sections */
+  margin-bottom: 20px; /* Add margin to separate sections */
+  border-radius: 10px;
   color: #fff;
-  padding: 20px;
 }
 
-h1 {
-  margin: 0;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-.experience {
-  border-top: 2px solid #6878a0;
-  padding-top: 20px;
-}
-
-.education {
-  margin-top: 20px;
+.right-section {
+  flex: 1;
+  background-color: #616161; /* Light grey background color for the right section */
+  padding: 10px; /* Padding for content inside the right section */
+  margin-bottom: 20px; /* Add margin to separate from other sections */
+  margin-left: 20px; /* Add margin to create space between left and right sections */
+  border-radius: 10px;
+  color: #fff;
 }

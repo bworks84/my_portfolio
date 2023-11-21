@@ -1,0 +1,14 @@
+.social-icons {
+  margin-top: 1inch; /* One-inch spacing from the title */
+}
+
+.social-icons a {
+  color: #87ceeb; /* Light blue color for icons */
+  margin: 0 1inch; /* One-inch spacing between icons */
+  font-size: 1.5em; /* Adjust the icon size */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #fff; /* Change color on hover */
+}

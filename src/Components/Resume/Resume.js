@@ -1,72 +1,56 @@
 // Resume.js
-
 import React from "react";
-import "./Resume.css"; // Import the CSS file
+import "./Resume.css";
+import GitHubLink from "../GitHubLink/GitHubLink";
+import LinkedInLink from "../LinkedIn/LinkedIn";
 
 const Resume = () => {
   return (
-    <div className="resume-container">
-      <header>
-        <h1>Rob Works</h1>
-        <p>Winston-Salem, NC | 336-413-9633 | bworks84@gmail.com</p>
-        <p>github.com/bworks84 | linkedin.com/in/rob-works-coding/</p>
-      </header>
-
-      <section>
-        <h2>About Me</h2>
-        <p>
-          A self-taught information technology specialist and military veteran,
-          eager to transition from a successful sales career to the cloud. A
-          versatile professional with 1.5 years experience in programming,
-          cybersecurity, and cloud technology, driven to address information
-          security vulnerabilities by utilizing technology.
-        </p>
-      </section>
-
-      <section>
-        <h2>Certifications</h2>
-        <ul>
-          <li>AWS Certified Cloud Practitioner NH1YWBLBNJQE1T55</li>
-          <li>AWS Solutions Architect Associate (CO2) V3N73QC1SME1QK94</li>
-          <li>CompTIA Network+ 5RTB06ZYGMF11FCS</li>
-          <li>CompTIA Security+ X2TJ6FCQHB41QB3G</li>
-          <li>CompTIA CySA+ (003) YBPY7GRT2NEQQRC8</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Software and Cloud Portfolio</h2>
-        <ul>
-          <li>
-            <strong>Cloud Resume Challenge:</strong> Hosted HTML-styled resume
-            on a personal domain through AWS S3 and Route53. Secured domain with
-            HTTPS Certificate and CloudFormation. Built Lambda API that
-            incremented site count held in DynamoDB table.
-          </li>
-          <li>
-            <strong>Recipe Finder App:</strong> Built full-stack (CRUD) recipe
-            recommendation application utilizing React, JavaScript, Django,
-            Python, APIs, and PostgreSQL. Utilized Authentication tokens for
-            security and identifying personal session data.
-          </li>
-          <li>
-            <strong>AWS Serverless API:</strong> Built API utilizing JavaScript,
-            AWS Lambda and CloudFormation to analyze user input text.
-          </li>
-        </ul>
-      </section>
-
-      <section className="experience">
-        <h2>Experience</h2>
-        <ul>{/* ... Experience details go here ... */}</ul>
-      </section>
-
-      <section className="education">
-        <h2>Education</h2>
-        <p>{/* ... Education details go here ... */}</p>
-      </section>
-
-      {/* ... Add more sections as needed ... */}
+    <div className="center">
+      <div className="resume">
+        <div className="title">
+          <h1>Rob Works</h1>
+          <div className="social-icons">
+            <GitHubLink />
+            <LinkedInLink />
+          </div>
+        </div>
+        <div className="resume_left">
+          <div className="resume_profile"></div>
+          <div className="resume_content">{/* ... other sections ... */}</div>
+        </div>
+        <div className="resume_right">
+          <div className="resume_item resume_about">
+            <div className="title">
+              <h3 className="bold">About me</h3>
+              <p>
+                Self-driven cloud engineer and military veteran seeking
+                opportunity
+              </p>
+            </div>
+          </div>
+          <div className="sections-container">
+            <div className="left-sections">
+              <div className="section projects">
+                <h2>Projects</h2>
+                {/* ... Your projects content */}
+              </div>
+              <div className="section certifications">
+                <h2>Certifications</h2>
+                {/* ... Your certifications content */}
+              </div>
+              <div className="section education">
+                <h2>Education</h2>
+                {/* ... Your education content */}
+              </div>
+            </div>
+            <div className="section right-section">
+              <h2>Experience</h2>
+              {/* ... Your experience content */}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

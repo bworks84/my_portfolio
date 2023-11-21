@@ -32,7 +32,7 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [x] Push initial stages to new repo. Make README file
 
-[ ] Update Resume and host on site.
+[ ] Update Resume.
 
 [ ] Build out blog application.
 
@@ -43,3 +43,5 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 [ ] Create new domain.
 
 # Notes
+
+[ ] Day 1 - Building out new HTML styled resume in spirit of the Cloud Resume Challenge. Also I will begin utilizing Copilot throughout this project for support. I will need to build out my previous Terraform projects and Docker projects, including better README documentation to link to in this portfolio
