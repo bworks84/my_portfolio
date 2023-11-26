@@ -7,7 +7,6 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <nav className="navbar">
-      <img />
       <div className="desktopMenu">
         <Link
           activeClass="active"

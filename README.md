@@ -32,6 +32,8 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [x] Push initial stages to new repo. Make README file
 
+[ ] Create weekly progress notes in separate folder, organize README better
+
 [ ] Update Resume.
 
 [ ] Build out blog application.

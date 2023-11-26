@@ -1,6 +1,7 @@
 import React from "react";
-import "./AboutMe.css";
+import "./Intro.css";
 import { Link } from "react-scroll";
+import selfie from "../../assets/GCpic.png";
 
 const Intro = () => {
   return (
@@ -11,17 +12,16 @@ const Intro = () => {
           I'm <span className="introName">Rob</span> <br />a Cloud Engineer
         </span>
         <p className="introPara">
-          I am learning web design
+          I am practicing web design
           <br />
-          for cloud projects!
+          to demonstrate my skills <br />
+          and interests in the cloud
         </p>
         <Link>
-          <button className="btn">
-            <img /> Hire Me
-          </button>
+          <button className="btn">Hire Me</button>
         </Link>
       </div>
-      <img />
+      <img src={selfie} alt="Profile" className="bg" />
     </section>
   );
 };

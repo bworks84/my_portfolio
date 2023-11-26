@@ -1,5 +1,5 @@
 import Navbar from "./Components/NavBar/Navbar";
-import AboutMe from "./Components/AboutMe/AboutMe";
+import Intro from "./Components/Intro/Intro";
 import Footer from "./Components/Footer/Footer";
 import Resume from "./Components/Resume/Resume";
 import Skills from "./Components/Skills/Skills";
@@ -9,11 +9,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <AboutMe />
-      <Resume />
-      <Contact />
+      <Intro />
       <Skills />
-      <Footer />
     </div>
   );
 }
