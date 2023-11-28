@@ -15,17 +15,15 @@ const Resume = () => {
             <LinkedInLink />
           </div>
         </div>
-        <div className="resume_left">
-          <div className="resume_profile"></div>
-          <div className="resume_content">{/* ... other sections ... */}</div>
-        </div>
         <div className="resume_right">
           <div className="resume_item resume_about">
             <div className="title">
               <h3 className="bold">About me</h3>
               <p>
-                Self-driven cloud engineer and military veteran seeking
-                opportunity
+                Self-driven veteran and cloud engineer with a year and a half
+                experience in cloud engineering, coding, and cybersecurity. I am
+                result-oriented professional with a diverse background working
+                in a fast-paced environment.
               </p>
             </div>
           </div>
@@ -37,16 +35,34 @@ const Resume = () => {
               </div>
               <div className="section certifications">
                 <h2>Certifications</h2>
-                {/* ... Your certifications content */}
+                <ul className="certifications-list">
+                  <li>AWS Certified Cloud Practitioner</li>
+                  <li>AWS Solutions Architect Associate</li>
+                  <li>CompTIA Security+</li>
+                  <li>CompTIA Network+</li>
+                  <li>CompTIA Cybersecurity Analyst+</li>
+                </ul>
               </div>
               <div className="section education">
                 <h2>Education</h2>
-                {/* ... Your education content */}
+                <ul className="education-list">
+                  <li>Purdue Northwest University</li>
+                  <li>Code Platoon</li>
+                  <li>University of North Carolina at Chapel Hill</li>
+                </ul>
               </div>
             </div>
             <div className="section right-section">
               <h2>Experience</h2>
-              {/* ... Your experience content */}
+              <ul className="experience-list">
+                <li>
+                  7 years experience in sales, including medical device and SaaS
+                </li>
+                <li>
+                  6 years of service as a US Marine, including 4 and half as a
+                  Recon Marine
+                </li>
+              </ul>
             </div>
           </div>
         </div>

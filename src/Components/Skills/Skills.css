@@ -37,11 +37,11 @@
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   background: rgb(50, 50, 50);
-  box-shadow: 0 0 0.5rem 0.25rem rgb(0, 0, 0);
+  box-shadow: 0 0 0.25rem 0.25rem rgb(0, 0, 0);
 }
 
 .skillBarImg {
-  object-fit: cover;
+  object-fit: scale-down;
   height: 3rem;
   width: 3rem;
   margin-right: 2rem;
@@ -50,6 +50,7 @@
 .skillBarText > p {
   font-size: 0.9rem;
   font-weight: 200;
+  align-items: center;
 }
 
 .skillBarTitle {
@@ -57,19 +58,15 @@
   font-weight: 400;
   margin-bottom: 0.5rem;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   color: yellow;
 }
 
 h2 {
-  color: blue; /* Change the color of the h2 text */
+  color: blue;
 }
-
-/* Style for the anchor tag within an h2 tag */
 h2 a {
-  color: red; /* Change the color of the anchor text within h2 */
-  text-decoration: none; /* Remove underline (if you don't want it) */
+  color: yellow;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 720px) {
