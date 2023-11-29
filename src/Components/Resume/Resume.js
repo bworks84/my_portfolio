@@ -11,56 +11,131 @@ const Resume = () => {
         <div className="title">
           <h1>Rob Works</h1>
           <div className="social-icons">
+            <h2 className="section-title">Cloud Engineer</h2>
             <GitHubLink />
             <LinkedInLink />
           </div>
         </div>
         <div className="resume_right">
-          <div className="resume_item resume_about">
-            <div className="title">
-              <h3 className="bold">About me</h3>
-              <p>
-                Self-driven veteran and cloud engineer with a year and a half
-                experience in cloud engineering, coding, and cybersecurity. I am
-                result-oriented professional with a diverse background working
-                in a fast-paced environment.
-              </p>
-            </div>
+          <div className="resume-about">
+            <h2 className="about-title">About me</h2>
+            <p>
+              Self-driven veteran and cloud engineer with a year and a half
+              experience in cloud engineering, coding, and cybersecurity. I am
+              result-oriented professional with a diverse background. I enjoy
+              learning new skills and tackling problems.
+            </p>
           </div>
           <div className="sections-container">
             <div className="left-sections">
               <div className="section projects">
-                <h2>Projects</h2>
-                {/* ... Your projects content */}
+                <h2 className="section-title">Projects</h2>
+                <ul className="projects-list">
+                  <li>
+                    <em>Cloud Resume Challenge</em>
+                  </li>
+                  <ul>
+                    <li className="list-item-description">
+                      Built modern resume with HTML and CSS, deployed to AWS S3,
+                      hosted on R53, included API to track visitor count, and
+                      implemented CI/CD
+                    </li>
+                  </ul>
+                </ul>
               </div>
               <div className="section certifications">
-                <h2>Certifications</h2>
+                <h2 className="section-title">Certifications</h2>
                 <ul className="certifications-list">
                   <li>AWS Certified Cloud Practitioner</li>
                   <li>AWS Solutions Architect Associate</li>
                   <li>CompTIA Security+</li>
                   <li>CompTIA Network+</li>
-                  <li>CompTIA Cybersecurity Analyst+</li>
+                  <li>CompTIA CySA+</li>
                 </ul>
               </div>
               <div className="section education">
-                <h2>Education</h2>
+                <h2 className="section-title">Education</h2>
                 <ul className="education-list">
-                  <li>Purdue Northwest University</li>
-                  <li>Code Platoon</li>
-                  <li>University of North Carolina at Chapel Hill</li>
+                  <li>
+                    <em>Purdue Northwest University</em>
+                  </li>
+                  <ul>
+                    <li className="list-item-description">
+                      8 course Cloud Administration Track
+                    </li>
+                  </ul>
+                  <li>
+                    <em>Code Platoon</em>
+                  </li>
+                  <ul>
+                    <li className="list-item-description">
+                      15 week full stack software engineering bootcamp
+                    </li>
+                  </ul>
+
+                  <li>
+                    <em>University of North Carolina at Chapel Hill</em>
+                  </li>
+                  <ul>
+                    <li className="list-item-description">
+                      Bachelor's Degree 2012
+                    </li>
+                  </ul>
                 </ul>
               </div>
             </div>
             <div className="section right-section">
-              <h2>Experience</h2>
+              <h2 className="section-title">Experience</h2>
               <ul className="experience-list">
+                <li>Student</li>
+                <ul>
+                  <li className="list-item-description">
+                    2 years practicing cybersecurity, cloud tech, and Python
+                  </li>
+                </ul>
                 <li>
-                  7 years experience in sales, including medical device and SaaS
+                  <em>Career Break</em>
+                </li>
+                <ul>
+                  <li className="list-item-description">
+                    Traveled western United States for 1.5 years in self-built
+                    campervan
+                  </li>
+                </ul>
+                <li>
+                  <em>Medical Device Rep</em>
+                  <ul>
+                    <li className="list-item-description">
+                      5 years’ experience developing business relationships by
+                      recognizing customer needs and presenting clinical
+                      benefits of orthopedic treatment to diverse audiences.
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  6 years of service as a US Marine, including 4 and half as a
-                  Recon Marine
+                  <em>SaaS Sales Rep</em>
+                  <ul>
+                    <li className="list-item-description">
+                      Sold customized SaaS solutions for 2 years, utilizing
+                      data-driven process to filter customers by priority,
+                      research potential needs for product, and present
+                      solutions to executive audiences.
+                    </li>
+                    <li className="list-item-description">
+                      Delivered over $144k in new annual recurring revenue in 12
+                      months, 120% YTD quota attainment.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <em>US Marine</em>
+                  <ul>
+                    <li className="list-item-description">
+                      Served 6 years, deploying to Iraq and Afghanistan in
+                      support of counterinsurgency operations as Reconnaissance
+                      Marine
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>

@@ -7,21 +7,35 @@
 
 .resume {
   width: 8.5in;
-  height: 11in;
-  background-color: #bfbcbc;
+  height: 10in;
+  background-color: #f7f5f5;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(32, 31, 31, 0.1);
   padding: 20px;
   margin: 20px;
 }
 
+.resume-about {
+  background-color: #bfccbb; /* Light grey background color for sections */
+  padding: 10px; /* Padding for content inside sections */
+  margin-bottom: 20px; /* Add margin to separate sections */
+  border-radius: 10px;
+  color: #2c446f;
+}
+
 .title {
-  background-color: #8f8d8d;
-  color: #fff;
+  background-color: #bfccbb;
+  color: #2c446f;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.about-title {
+  background-color: #bfccbb;
+  color: #2c446f;
+  text-align: center;
 }
 
 .social-icons {
@@ -30,7 +44,7 @@
 }
 
 .social-icons a {
-  color: #87ceeb;
+  color: #2c446f;
   margin: 10px;
   font-size: 1.5em;
   text-decoration: none;
@@ -55,16 +69,19 @@
 }
 
 .section {
-  background-color: #8f8d8d; /* Light grey background color for sections */
+  background-color: #bfccbb; /* Light grey background color for sections */
   padding: 10px; /* Padding for content inside sections */
   margin-bottom: 20px; /* Add margin to separate sections */
   border-radius: 10px;
   color: #fff;
 }
+.section-title {
+  color: #2c446f;
+}
 
 .right-section {
   flex: 1;
-  background-color: #8f8d8d; /* Light grey background color for the right section */
+  background-color: #bfccbb; /* Light grey background color for the right section */
   padding: 10px; /* Padding for content inside the right section */
   margin-bottom: 20px; /* Add margin to separate from other sections */
   margin-left: 20px; /* Add margin to create space between left and right sections */
@@ -72,20 +89,42 @@
   color: #fff;
 }
 
+.resume-about {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
 .certifications-list {
   list-style-type: none; /* Remove default list styles (bullet points) */
   padding: 0; /* Remove default padding */
   text-align: left; /* Align the list items to the left */
+  color: #2c446f;
 }
 
 .education-list {
   list-style-type: none; /* Remove default list styles (bullet points) */
   padding: 0; /* Remove default padding */
   text-align: left; /* Align the list items to the left */
+  color: #2c446f;
 }
 
 .experience-list {
   list-style-type: none; /* Remove default list styles (bullet points) */
   padding: 0; /* Remove default padding */
   text-align: left; /* Align the list items to the left */
+  color: #2c446f;
+}
+
+.projects-list {
+  list-style-type: none; /* Remove default list styles (bullet points) */
+  padding: 0; /* Remove default padding */
+  text-align: left; /* Align the list items to the left */
+  color: #2c446f;
+}
+
+.list-item-description {
+  margin-left: 20px;
+  list-style-type: disc;
+  font-size: 14px;
 }

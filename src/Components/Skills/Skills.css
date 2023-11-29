@@ -58,14 +58,14 @@
   font-weight: 400;
   margin-bottom: 0.5rem;
   align-items: center;
-  color: yellow;
+  color: #cd853f;
 }
 
 h2 {
   color: blue;
 }
 h2 a {
-  color: yellow;
+  color: #cd853f;
   text-decoration: none;
 }
 
@@ -86,4 +86,9 @@ h2 a {
   .skillBarText > h2 {
     font-size: 5vw;
   }
+}
+
+.badges-container {
+  display: flex;
+  justify-content: space-around;
 }

@@ -2,6 +2,12 @@ import React from "react";
 import "./Skills.css";
 import terraform from "../../assets/terraform.svg";
 import systems from "../../assets/diagram-project-solid.svg";
+import CySA from "../Badges/CySA";
+import CSAP from "../Badges/CSAP";
+import Net from "../Badges/Net";
+import Sec from "../Badges/Sec";
+import SAA from "../Badges/SAA";
+import CCP from "../Badges/CCP";
 
 const Skills = () => {
   return (
@@ -41,6 +47,14 @@ const Skills = () => {
             <p>Learning Infrastructure as Code by building a web app on AWS</p>
           </div>
         </div>
+      </div>
+      <div className="badges-container">
+        <CySA />
+        <CSAP />
+        <Net />
+        <Sec />
+        <SAA />
+        <CCP />
       </div>
     </section>
   );
