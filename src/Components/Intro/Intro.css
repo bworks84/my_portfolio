@@ -17,6 +17,7 @@
 }
 
 .introContent {
+  margin-top: 30px;
   height: 100vh;
   width: 100vw;
   padding: 2rem;
@@ -37,8 +38,10 @@
 }
 
 .introPara {
+  display: flex;
   font-size: medium;
-  font-weight: 300;
+  width: 25vw;
+  font-weight: 1rem;
   letter-spacing: 1px;
 }
 

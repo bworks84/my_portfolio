@@ -1,20 +1,40 @@
 #skills {
   overflow: hidden;
-  width: 100vw;
-  max-width: 65rem;
+  width: 200vw;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  border: 1px;
+}
+
+.divider {
+  width: 125%;
+  height: 0.15rem;
+  background: #cd853f;
+  margin: 1rem 0;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  background: rgb(50, 50, 50);
+  box-shadow: 0 0 0.25rem 0.25rem rgb(0, 0, 0);
 }
 
 .skillTitle {
   font-size: 3rem;
   font-weight: 600;
-  padding-top: 3rem;
-  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  color: #cd853f;
 }
 
 .skillDesc {
@@ -22,17 +42,19 @@
   font-size: 1rem;
   max-width: 51rem;
   padding: 0 2rem;
+  margin-bottom: 2rem;
 }
 
 .skillBars {
   margin: 1.5rem;
-  width: 100vw;
+  width: 35vw;
   max-width: 80%;
   text-align: left;
 }
 
 .skillBar {
   display: flex;
+  align-items: left;
   margin: 1rem;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
@@ -42,6 +64,7 @@
 
 .skillBarImg {
   object-fit: scale-down;
+
   height: 3rem;
   width: 3rem;
   margin-right: 2rem;
@@ -91,4 +114,9 @@ h2 a {
 .badges-container {
   display: flex;
   justify-content: space-around;
+}
+
+#current-studies {
+  color: #cd853f;
+  margin-top: 2rem;
 }

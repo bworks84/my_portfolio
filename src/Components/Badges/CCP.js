@@ -16,6 +16,7 @@ const CCP = () => {
 
   return (
     <div
+      className="credly-badge-embed"
       data-iframe-width="150"
       data-iframe-height="270"
       data-share-badge-id="e66ca326-d3fd-4e17-9e9e-688b5e6a76aa"

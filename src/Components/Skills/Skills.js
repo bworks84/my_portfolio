@@ -1,28 +1,37 @@
 import React from "react";
 import "./Skills.css";
 import terraform from "../../assets/terraform.svg";
-import systems from "../../assets/diagram-project-solid.svg";
-import CySA from "../Badges/CySA";
-import CSAP from "../Badges/CSAP";
-import Net from "../Badges/Net";
-import Sec from "../Badges/Sec";
-import SAA from "../Badges/SAA";
-import CCP from "../Badges/CCP";
+import BadgeBar from "../BadgeBar/BadgeBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTerminal } from "@fortawesome/free-solid-svg-icons";
+import { faCloud } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
   return (
     <section id="skills">
-      <span className="skillTitle">Check out what I'm working on</span>
-      <span className="skillDesc">
-        {" "}
-        I'm a former US Marine and current student studying Cybersecurity and
-        Cloud Computing. I'm interested in securing cloud infrastructure and
-        protecting user data. In my free time I enjoy learning more about
-        ethical hacking and data forensics.
-      </span>
+      <div className="divider"></div>
+      <div className="about-me-container">
+        <span className="skillTitle">About me</span>
+        <span className="skillDesc">
+          I'm a former US Marine and current student studying Cybersecurity and
+          Cloud Computing. In the military, I enjoyed learning and utilizing
+          technology to enable my team to be more successful. Now, I'm
+          interested in securing cloud infrastructure and protecting user data.
+          In my free time I enjoy learning more about cloud tech, backpacking,
+          and mountain biking.
+        </span>
+      </div>
+      <h2 id="current-studies">
+        Below are a few courses and studies that I'm currently working on!
+      </h2>
       <div className="skillBars">
         <div className="skillBar">
-          <img src={systems} alt="Skill" className="skillBarImg"></img>
+          <FontAwesomeIcon
+            icon={faCloud}
+            style={{ color: "#0097f5" }}
+            size="2x"
+            className="skillBarImg"
+          />
           <div className="skillBarText">
             <h2 className="skillBarTitle">
               <a href="https://www.pnw.edu/cybersecurity/cwct/training-paths/cybersecurity-system-administration-certificate-program/">
@@ -30,32 +39,34 @@ const Skills = () => {
               </a>
             </h2>
             <p>
-              Check out this great cybersecurity program I completed that
-              includes courses for CompTIA A+, Linux, RHCSA, CEH, Python, and
-              more!
+              Check out this great cybersecurity program from Purdue Northwest
+              University that includes courses for CompTIA A+, Linux, RHCSA,
+              CEH, Python, and more!
             </p>
           </div>
         </div>
         <div className="skillBar">
-          <img src={terraform} alt="Skill" className="skillBarImg"></img>
+          <FontAwesomeIcon
+            icon={faTerminal}
+            style={{ color: "#127871" }}
+            size="2x"
+            className="skillBarImg"
+          />
           <div className="skillBarText">
             <h2 className="skillBarTitle">
-              <a href="https://www.exampro.co/ter-cpb-001">
-                ExamPro Terraform Cloud Project
-              </a>
+              <a className="fa-title">CompTIA Linux+</a>
             </h2>
-            <p>Learning Infrastructure as Code by building a web app on AWS</p>
+            <p id="linux-text">
+              I'm very interested in becoming proficient with Linux and studying
+              to obtain the Linux+ certification by mid-January 2024
+            </p>
           </div>
         </div>
       </div>
-      <div className="badges-container">
-        <CySA />
-        <CSAP />
-        <Net />
-        <Sec />
-        <SAA />
-        <CCP />
+      <div>
+        <BadgeBar />
       </div>
+      <div className="divider"></div>
     </section>
   );
 };

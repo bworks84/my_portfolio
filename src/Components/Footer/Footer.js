@@ -4,8 +4,10 @@ import "./Footer.css"; // Import the styles
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>Thanks for visiting my site! </p>
-      <p>Placeholder for website counter</p>
+      <br />
+      <div id="visitor-counter">
+        <h3>You are number ??? to visit my site, thank you!</h3>
+      </div>
     </footer>
   );
 };

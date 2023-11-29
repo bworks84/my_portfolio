@@ -1,21 +1,20 @@
 import "./Contact.css";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import github from "../../assets/github.png";
-import linkedin from "../../assets/linkedin.png";
+import LinkedInLink from "../LinkedIn/LinkedIn";
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef(); // setting up emailjs from documentation
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_6phm4ar",
-        "template_zcxds5a",
+        "service_rvtdf24",
+        "template_bcgg6wi",
         form.current,
-        "blaHt_5KIJ711DfGH"
+        "zd6vxRWbnwt-VtMSd"
       )
       .then(
         (result) => {
@@ -32,16 +31,11 @@ const Contact = () => {
   return (
     <div id="contactPage">
       <div id="contact">
-        <h1 className="contactPageTitle">Contact me</h1>
-        <span className="clientDesc">
-          You can contact me via LinkedIn or below
-        </span>
-      </div>
-      <div id="contact">
         <h1 className="contactPageTitle">Contact Me</h1>
         <span className="contactDesc">
-          Please fill out the form below to discuss any work opportunities.
+          Please fill out the form below to contact me or find me on LinkedIn.
         </span>
+        <LinkedInLink color="#cd853f" />
         <form className="contactForm" ref={form} onSubmit={sendEmail}>
           <input
             type="text"
@@ -64,10 +58,6 @@ const Contact = () => {
           <button type="submit" value="Send" className="submitBtn">
             Submit
           </button>
-          <div className="links">
-            <img src={linkedin} alt="linkedin" className="link" />
-            <img src={github} alt="GitHub" className="link" />
-          </div>
         </form>
       </div>
     </div>

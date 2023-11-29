@@ -11,7 +11,7 @@ const Resume = () => {
         <div className="title">
           <h1>Rob Works</h1>
           <div className="social-icons">
-            <h2 className="section-title">Cloud Engineer</h2>
+            <h2 className="section-title"></h2>
             <GitHubLink />
             <LinkedInLink />
           </div>
@@ -23,7 +23,8 @@ const Resume = () => {
               Self-driven veteran and cloud engineer with a year and a half
               experience in cloud engineering, coding, and cybersecurity. I am
               result-oriented professional with a diverse background. I enjoy
-              learning new skills and tackling problems.
+              learning new skills and tackling problems. Seeking remote
+              opportunities.
             </p>
           </div>
           <div className="sections-container">
@@ -32,7 +33,9 @@ const Resume = () => {
                 <h2 className="section-title">Projects</h2>
                 <ul className="projects-list">
                   <li>
-                    <em>Cloud Resume Challenge</em>
+                    <a href="https://resume.cloudyrob.com/">
+                      <em>Cloud Resume Challenge</em>
+                    </a>
                   </li>
                   <ul>
                     <li className="list-item-description">

@@ -7,19 +7,14 @@ const Intro = () => {
   return (
     <section id="intro">
       <div className="introContent">
-        <span className="hello">Hey,</span>
+        <span className="hello">Hey</span>
         <span className="introText">
-          I'm <span className="introName">Rob</span> <br />a Cloud Engineer
+          I'm <span className="introName">Rob,</span> <br />a Cloud Engineer
         </span>
         <p className="introPara">
-          I am practicing web design
-          <br />
-          to demonstrate my skills <br />
-          and interests in the cloud
+          I enjoy learning and utilizing tech to solve problems. This new site
+          will be home to my portfolio and blog. Check back soon for updates!
         </p>
-        <Link>
-          <button className="btn">Hire Me</button>
-        </Link>
       </div>
       <img src={selfie} alt="Profile" className="bg" />
     </section>

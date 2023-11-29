@@ -32,17 +32,33 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [x] Push initial stages to new repo. Make README file
 
-[ ] Create weekly progress notes in separate folder, organize README better
+[ ] Change icon for tab
 
-[ ] Update Resume.
+[x] Create border or outline for skills section
+
+[ ] Create weekly progress notes in separate folder
+
+[x] Build out Skills section to link to a blog or area that documents this project
+
+[x] Build out React functionality for badges (minimize and remove them as screen gets smaller)
+
+[x] Update Resume.
+
+[x] Hook up Contact Me button on navbar
+
+[x] Hook up email functionality for contact form
 
 [ ] Build out blog application.
 
-[ ] Finish front-end design of website.
+[x] Finish front-end design of website.
 
 [ ] Host on AWS S3.
 
 [ ] Create new domain.
+
+# Ideas
+
+- Interactive road map with highlights or notes about my journey since 2020
 
 # Notes
 

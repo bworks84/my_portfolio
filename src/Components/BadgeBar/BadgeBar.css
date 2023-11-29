@@ -1,0 +1,23 @@
+.badge:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.credly-badge-container {
+  position: relative;
+  display: flex;
+}
+
+@media screen and (max-width: 1015px) {
+  .credly-badge-container {
+    flex-direction: column; /* Stack badges vertically */
+  }
+}
+
+.credly-badge {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
