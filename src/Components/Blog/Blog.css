@@ -1,5 +1,54 @@
-/* styles.css */
 .blog {
-  max-width: 800px;
-  margin: 0 auto;
+  padding: 20px; /* Add padding to the container */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #cd853f;
+}
+
+.new-post-form {
+  margin-bottom: 20px; /* Add margin at the bottom of the form */
+  width: 70%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a maximum width for the form */
+}
+
+.new-post-form input {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #bfb9b9;
+}
+
+.new-post-content-area,
+textarea {
+  height: 200px;
+  width: 100%;
+  border: 1px solid #ccc;
+  color: #bfb9b9;
+  border-radius: 5px;
+  display: flex;
+}
+
+.new-post-form button {
+  background-color: #3498db; /* Different color for the "Add Post" button */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.new-post-form button:hover {
+  background-color: #2980b9; /* Darker color on hover */
+}
+
+h1 {
+  text-align: center;
 }

@@ -61,7 +61,11 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [x] Updated with basic routing...might come back to add scrolling for home page
 
-[ ] Host on AWS S3.
+[x] Host on AWS S3, use AWS CLI to sync changes via package.json script
+
+[x] Updated footer to only appear on home page
+
+[ ] Update styling to account for different screen sizes
 
 [ ] Create new domain.
 
@@ -73,4 +77,4 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 # Notes
 
-[ ] Day 1 - Building out new HTML styled resume in spirit of the Cloud Resume Challenge. Also I will begin utilizing Copilot throughout this project for support. I will need to build out my previous Terraform projects and Docker projects, including better README documentation to link to in this portfolio
+- consider adding delete script to package.json to minimize S3 size - // aws s3 sync --delete build/ s3://YOUR_BUCKET_NAME

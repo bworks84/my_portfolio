@@ -8,9 +8,9 @@ const ProjectsSection = () => {
   return (
     <section className="projects-section">
       <div className="projects-main">
-        <h2 id="current-studies">
+        <h1 id="current-studies">
           Check out some of my recent projects and certifications!
-        </h2>
+        </h1>
         <div>
           <ProjectsContainer />
         </div>

@@ -3,16 +3,17 @@ import React from "react";
 import "./Resume.css";
 import GitHubLink from "../GitHubLink/GitHubLink";
 import LinkedInLink from "../LinkedIn/LinkedIn";
-import backgroundPhoto from "../../assets/abstract-techno-background-with-low-poly-design.jpg";
 
 const Resume = () => {
   return (
     <div className="center">
+      <div className="page-title">
+        <h1>Cloud Resume Challenge part 2</h1>
+      </div>
       <div className="resume">
-        <div className="title">
+        <div className="resume-title">
           <h1>Rob Works</h1>
           <div className="social-icons">
-            <h2 className="section-title"></h2>
             <GitHubLink />
             <LinkedInLink />
           </div>

@@ -24,7 +24,6 @@ function App() {
         <Routes>
           <Route path="/blog" element={<Blog />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );

@@ -1,6 +1,7 @@
 // Blog.js
 import React, { useState } from "react";
 import BlogPost from "../BlogPost/BlogPost";
+import "./Blog.css";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -26,11 +27,16 @@ const Blog = () => {
           value={newPost.title}
           onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
         />
-        <textarea
-          placeholder="Write your blog post here..."
-          value={newPost.content}
-          onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}
-        ></textarea>
+        <div className="new-post-content-area">
+          <textarea
+            typeof="text"
+            placeholder="  Write your blog post here..."
+            value={newPost.content}
+            onChange={(e) =>
+              setNewPost({ ...newPost, content: e.target.value })
+            }
+          ></textarea>
+        </div>
         <button onClick={addPost}>Add Post</button>
       </div>
       {posts.map((post, index) => (

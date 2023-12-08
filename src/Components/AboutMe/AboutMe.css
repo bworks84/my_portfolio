@@ -1,7 +1,9 @@
 /* YourComponent.css */
 .container {
   display: flex;
-  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .left-section-about {
@@ -28,8 +30,8 @@
 }
 
 .right-section-about {
-  max-width: 700px; /* Adjust max width as needed */
-  padding: 20px;
+  width: 75%;
+  padding: 10px;
   background-color: rgb(30, 30, 30); /* Adjust background color as needed */
   border-radius: 0 10px 10px 0; /* Add rounded corners to the right section */
   color: white; /* Text color */
