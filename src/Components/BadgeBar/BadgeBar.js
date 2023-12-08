@@ -8,6 +8,8 @@ import "./BadgeBar.css";
 import Net from "../Badges/Net";
 
 const BadgeBar = () => {
+  const [scriptLoaded, setScriptLoaded] = useState(false);
+
   useEffect(() => {
     const script = document.createElement("script");
     script.type = "text/javascript";
@@ -16,6 +18,7 @@ const BadgeBar = () => {
 
     script.onload = () => {
       console.log("Credly script loaded");
+      setScriptLoaded(true);
     };
 
     document.head.appendChild(script);
@@ -24,6 +27,10 @@ const BadgeBar = () => {
       document.head.removeChild(script);
     };
   }, []);
+
+  if (!scriptLoaded) {
+    return <div>Loading...</div>;
+  }
 
   const Badge = ({ badgeId }) => {
     const renderBadge = () => {

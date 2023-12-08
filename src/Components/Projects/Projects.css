@@ -1,0 +1,42 @@
+.projects-container {
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-box {
+  width: 25%;
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 0.5rem;
+  background: rgb(50, 50, 50);
+  box-shadow: 0 0 0.25rem 0.25rem rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+}
+
+.project {
+  text-align: center;
+  flex: 1;
+}
+
+.project h3 {
+  margin-bottom: 10px;
+  color: #cd853f;
+}
+
+.project p {
+  margin-bottom: 15px;
+  font-size: clamp(10px, 2vw, 12px);
+}
+
+.project a {
+  color: #007bff; /* Adjust link color as needed */
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}

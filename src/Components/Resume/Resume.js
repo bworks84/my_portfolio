@@ -3,6 +3,7 @@ import React from "react";
 import "./Resume.css";
 import GitHubLink from "../GitHubLink/GitHubLink";
 import LinkedInLink from "../LinkedIn/LinkedIn";
+import backgroundPhoto from "../../assets/abstract-techno-background-with-low-poly-design.jpg";
 
 const Resume = () => {
   return (

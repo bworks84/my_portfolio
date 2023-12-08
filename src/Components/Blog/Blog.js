@@ -1,19 +1,41 @@
-// src/Components/Blog.js
-import React from "react";
-import "../styles/Blog.css"; // Import the styles
+// Blog.js
+import React, { useState } from "react";
+import BlogPost from "../BlogPost/BlogPost";
 
 const Blog = () => {
+  const [posts, setPosts] = useState([]);
+  const [newPost, setNewPost] = useState({ title: "", content: "" });
+
+  const addPost = () => {
+    if (newPost.title && newPost.content) {
+      setPosts([
+        ...posts,
+        { ...newPost, date: new Date().toLocaleDateString() },
+      ]);
+      setNewPost({ title: "", content: "" });
+    }
+  };
+
   return (
-    <div className="blog-container">
+    <div className="blog">
       <h1>My Blog</h1>
-      <article>
-        <h2>Blog Post Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </article>
-      {/* Add more blog posts as needed */}
+      <div className="new-post-form">
+        <input
+          type="text"
+          placeholder="Title"
+          value={newPost.title}
+          onChange={(e) => setNewPost({ ...newPost, title: e.target.value })}
+        />
+        <textarea
+          placeholder="Write your blog post here..."
+          value={newPost.content}
+          onChange={(e) => setNewPost({ ...newPost, content: e.target.value })}
+        ></textarea>
+        <button onClick={addPost}>Add Post</button>
+      </div>
+      {posts.map((post, index) => (
+        <BlogPost key={index} {...post} />
+      ))}
     </div>
   );
 };

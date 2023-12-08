@@ -6,11 +6,13 @@
 .credly-badge-container {
   position: relative;
   display: flex;
+  padding: 20px;
+  width: auto;
 }
 
 @media screen and (max-width: 1015px) {
   .credly-badge-container {
-    flex-direction: column; /* Stack badges vertically */
+    flex-direction: column;
   }
 }
 

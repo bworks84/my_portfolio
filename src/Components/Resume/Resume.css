@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 110vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .resume {
+  position: absolute;
   display: flex;
   flex-direction: column;
   max-width: 800px;
@@ -15,6 +17,27 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px;
+  z-index: 1;
+}
+
+.background-photo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+
+  filter: grayscale(50%);
+}
+
+.background-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
 }
 
 .resume-about {

@@ -1,0 +1,48 @@
+/* YourComponent.css */
+.container {
+  display: flex;
+  height: 80vh;
+}
+
+.left-section-about {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(30, 30, 30); /* Adjust background color as needed */
+  border-radius: 10px 0 0 10px; /* Add rounded corners to the left section */
+}
+
+.stock-photo {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 40px;
+  border-radius: 10px; /* Add rounded corners to the stock photo */
+}
+
+.right-section-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section-about {
+  max-width: 700px; /* Adjust max width as needed */
+  padding: 20px;
+  background-color: rgb(30, 30, 30); /* Adjust background color as needed */
+  border-radius: 0 10px 10px 0; /* Add rounded corners to the right section */
+  color: white; /* Text color */
+}
+
+.right-section-about h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #cd853f;
+}
+
+.right-section-about p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

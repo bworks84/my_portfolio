@@ -1,6 +1,5 @@
 import React from "react";
 import "./Intro.css";
-import { Link } from "react-scroll";
 import selfie from "../../assets/GCpic.png";
 
 const Intro = () => {
