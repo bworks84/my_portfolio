@@ -8,8 +8,6 @@ Welcome to my portfolio site! I'm building out a website to highlight what I've 
 - [About Me](#about-me)
 - [Projects](#projects)
 - [TaskList](#task-list)
-- [Tools](#tools)
-- [Attributes](#attributes)
 - [Notes](#notes)
 
 ## Overview
@@ -76,18 +74,9 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [ ] Implement API that only fires once for each session
 
-# Tools
-
-- Steps:
-
-1.  In root folder of react project, run `npm install -g @aws-amplify/cli`
-2.  Initialize Amplify in project by running `amplify init`
-
 # Ideas
 
 - Interactive road map with highlights or notes about my journey since 2020
-
-# Attributes
 
 # Notes
 
