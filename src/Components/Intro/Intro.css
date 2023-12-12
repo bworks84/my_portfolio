@@ -1,4 +1,5 @@
 #intro {
+  display: flex;
   height: calc(100vh - 6rem);
   width: 100vw;
   max-width: 75rem;
@@ -13,13 +14,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .intro-content-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   margin-top: 8rem;
 }
 
@@ -29,39 +30,34 @@
   right: 0;
   z-index: -1;
   object-fit: cover;
+  width: 100%;
   height: 100vh;
 }
 
 .introContent {
-  margin-top: 30px;
-  margin-bottom: 60px;
   height: 90vh;
-  min-width: 1215px;
-  width: 45vw;
+  min-width: 500px;
+  width: 25vw;
   padding: 2rem;
-  font-size: 3rem;
-  font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
+  font-size: 32px;
 }
 
-#hello {
-  font-size: 1.75rem;
+.hello {
   font-weight: 100;
 }
 
 .introName {
   color: #cd853f;
+  font-size: 30px;
+  font-weight: 100;
 }
 
-.introPara {
-  display: flex;
-  font-size: medium;
-  width: 25vw;
-  font-weight: 1rem;
-  letter-spacing: 1px;
+.introText {
+  font-size: 32px;
 }
 
 .btn {
@@ -80,18 +76,26 @@
 
 @media screen and (max-width: 840px) {
   .bg {
-    right: -20vw;
+    display: 100vw;
   }
   .introContent {
-    font-size: 10vw;
+    font-size: 5vw;
   }
   .hello {
     font-size: 4.5vw;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .bg {
-    right: -20vw;
+@media (max-width: 768px) {
+  #hello {
+    font-size: 20px;
+  }
+
+  .introText {
+    font-size: 24px;
+  }
+
+  .introPara {
+    font-size: 16px;
   }
 }

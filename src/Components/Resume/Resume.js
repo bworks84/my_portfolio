@@ -1,10 +1,30 @@
 // Resume.js
-import React from "react";
+import React, { useEffect } from "react";
 import "./Resume.css";
 import GitHubLink from "../GitHubLink/GitHubLink";
 import LinkedInLink from "../LinkedIn/LinkedIn";
 
 const Resume = () => {
+  useEffect(() => {
+    // Add an event listener to handle scroll behavior
+    const handleScroll = () => {
+      const title = document.querySelector(".page-title");
+
+      if (window.scrollY > 80) {
+        title.classList.add("fixed");
+      } else {
+        title.classList.remove("fixed");
+      }
+    };
+    // Attach the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="center">
       <div className="page-title">

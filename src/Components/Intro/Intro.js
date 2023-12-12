@@ -9,14 +9,14 @@ const Intro = () => {
     <section id="intro" className="intro-container">
       <div className="introContent">
         <div className="intro-content-container">
-          <span id="hello">Hey</span>
-          <span className="introText">
-            I'm <span className="introName">Rob,</span> <br />a Cloud Engineer
+          <span className="hello">
+            Hey,
+            <br />
           </span>
-          <p className="introPara">
-            I enjoy learning and utilizing tech to solve problems. <br />
-            Welcome to my portfolio site!
-          </p>
+          <span>
+            I'm <span className="introName">Rob, </span>
+          </span>
+          a Cloud Engineer
         </div>
       </div>
       <img src={selfie} alt="Profile" className="bg" />

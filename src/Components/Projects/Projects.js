@@ -18,12 +18,12 @@ const ProjectsContainer = () => {
     <div className="projects-container">
       <Project
         title="Terraform project"
-        description="A project showcasing the use of Terraform for infrastructure provisioning."
+        description="Terraform project for provisioning AWS infrastructure."
         githubLink="https://github.com/bworks84/terraform-proj"
       />
       <Project
         title="Cloud Resume Challenge"
-        description="Implemented a cloud-based resume following the Cloud Resume Challenge guidelines."
+        description="First attempt at Cloud Resume Challenge."
         githubLink="https://github.com/bworks84/cloud-resume-challenge"
       />
       <Project

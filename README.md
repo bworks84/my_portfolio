@@ -66,11 +66,11 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [x] Updated footer to only appear on home page
 
-[ ] Update styling to account for different screen sizes and test
+[ ] Update styling to account for different screen sizes and test (Projects a tags)
 
-[ ] Install AWS amplify for tools/features to develop full-stack app
+[x] Remove blog
 
-[ ] Create new domain.
+[x] Hook up to existing domain, create new cloudfront distribution, tie certificate to distro, create new A record.
 
 # Tools
 

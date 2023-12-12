@@ -95,14 +95,55 @@
   background: rgb(30, 30, 30);
 }
 
-@media screen and (max-width: 720px) {
-  .mobMenu {
-    display: flex;
+.mobileMenuIcon {
+  font-size: 20px;
+  padding: 15px;
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* Adjust the top position as needed */
+  background-color: #333;
+  width: 100%;
+}
+
+.mobileMenuListItem {
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .mobileMenuIcon {
+    display: block;
+    cursor: pointer;
   }
+
+  .navbar {
+    position: relative;
+  }
+
   .desktopMenu {
     display: none;
   }
-  .desktopMenuBtn {
+
+  .mobileMenu {
     display: none;
+    position: absolute;
+    top: 60px; /* Adjust the top position as needed */
+    background-color: #333;
+    width: 100%;
+    z-index: 1; /* Ensure the dropdown is on top of other content */
+  }
+
+  .mobileMenu.open {
+    display: flex;
+  }
+
+  .mobileMenuListItem {
+    text-align: center;
   }
 }

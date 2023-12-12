@@ -23,3 +23,9 @@
   transition: transform 0.3s ease-in-out;
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .credly-badge-container {
+    display: none; /* Hide project descriptions and GitHub links on smaller screens */
+  }
+}
