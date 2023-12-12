@@ -72,11 +72,11 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [x] Hook up to existing domain, create new cloudfront distribution, tie certificate to distro, create new A record.
 
-[ ] Work on scripts in package.json to automate build, sync to s3 bucket, and invalidate CF distro
+[x] Work on scripts in package.json to automate build, sync to s3 bucket, and invalidate CF distro
+
+[ ] Implement API that only fires once for each session
 
 # Tools
-
-Installed AWS Amplify for authentication and extra tools for this project.
 
 - Steps:
 
