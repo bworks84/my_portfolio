@@ -43,7 +43,7 @@
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  font-size: 32px;
+  font-size: 34px;
 }
 
 .hello {
@@ -52,7 +52,7 @@
 
 .introName {
   color: #cd853f;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 100;
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import CCP from "../Badges/CCP";
 import SAA from "../Badges/SAA";
 import Sec from "../Badges/Sec";

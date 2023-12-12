@@ -26,8 +26,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "prod_build": "npm run build",
     "deploy": "aws s3 sync build/ s3://my-react-portfolio84",
-    "prod": "npm run build && npm run deploy"
+    "invalidate": "aws cloudfront create-invalidation --distribution-id E21OO4A6JDHSRK --paths '/*'",
+    "prod": "npm run deploy"
   },
   "eslintConfig": {
     "extends": [

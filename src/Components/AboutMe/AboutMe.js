@@ -12,10 +12,10 @@ const AboutMe = () => {
         <div className="right-section-about">
           <h1>About Me</h1>
           <p>
-            I'm a US Marine and currently working on cloud projects. I am using
-            this website as a way to present some of tasks I'm working on while
-            I study for the Linux+ and RedHat Certified System Administrator
-            exams.
+            I'm a veteran and student, currently working on cloud projects. I am
+            using this website as a way to present some of tasks I'm working on
+            while I study for the Linux+ and RedHat Certified System
+            Administrator exams.
             <br />
             <br />
             I began working with computers as a kid, learning a lot about PCs by

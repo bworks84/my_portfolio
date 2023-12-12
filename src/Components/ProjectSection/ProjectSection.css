@@ -3,8 +3,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: auto;
   width: 100%;
+  padding: 20px;
 }
 
 .projects-main {
@@ -17,6 +18,7 @@
 .projects-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .badges-container {
@@ -36,23 +38,21 @@ h1#current-studies {
   display: inline-block;
   padding: 5px;
   margin: 5px;
-  transition: transform 0.3s ease-in-out;
   margin-bottom: 10px;
 }
 
-@media (max-width: 1020px) {
-  .credly-badge-container {
-    display: none; /* Hide project descriptions and GitHub links on smaller screens */
+@media (max-width: 768px) {
+  .credly-badge {
+    width: 100%;
+    max-width: none;
+    flex: 1 0 48%;
   }
-}
-
-@media (max-width: 1020px) {
   .projects-main {
     padding: 10px; /* Adjust padding for smaller screens */
   }
 
   h1#current-studies {
-    font-size: 28px; /* Adjust font size for smaller screens */
+    font-size: 20px; /* Adjust font size for smaller screens */
   }
 
   .projects-container {

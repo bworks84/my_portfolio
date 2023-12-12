@@ -72,6 +72,8 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [x] Hook up to existing domain, create new cloudfront distribution, tie certificate to distro, create new A record.
 
+[ ] Work on scripts in package.json to automate build, sync to s3 bucket, and invalidate CF distro
+
 # Tools
 
 Installed AWS Amplify for authentication and extra tools for this project.
@@ -90,3 +92,4 @@ Installed AWS Amplify for authentication and extra tools for this project.
 # Notes
 
 - consider adding delete script to package.json to minimize S3 size - // aws s3 sync --delete build/ s3://YOUR_BUCKET_NAME
+- CF template for invalidating aws cloudfront create-invalidation --distribution-id <distroID> --paths '/\*'

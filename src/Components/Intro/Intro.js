@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Intro.css";
 import selfie from "../../assets/GCpic.png";
 import Footer from "../Footer/Footer";
@@ -10,7 +10,7 @@ const Intro = () => {
       <div className="introContent">
         <div className="intro-content-container">
           <span className="hello">
-            Hey,
+            Hey
             <br />
           </span>
           <span>

@@ -5,9 +5,11 @@
 
 .credly-badge-container {
   position: relative;
+  justify-content: center;
   display: flex;
   padding: 20px;
   width: auto;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1015px) {
@@ -16,16 +18,12 @@
   }
 }
 
-.credly-badge {
-  display: inline-block;
-  padding: 5px;
-  margin: 5px;
-  transition: transform 0.3s ease-in-out;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .credly-badge-container {
     display: none; /* Hide project descriptions and GitHub links on smaller screens */
+  }
+  .credly-badge {
+    width: 100%;
+    max-width: none;
   }
 }

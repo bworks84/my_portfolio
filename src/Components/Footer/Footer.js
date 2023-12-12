@@ -9,8 +9,14 @@ const Footer = () => {
 
   useEffect(() => {
     // This is to prevent the API firing on every render
-    console.log("useEffect called");
+    // console.log("useEffect called");
     const apiCallMade = localStorage.getItem("apiCallMade");
+
+    if (!apiCallMade) {
+      //initialise local storage
+      localStorage.setItem("apiCallMade", true);
+    }
+    console.log("apiCallMade:", apiCallMade);
 
     const apiUrl =
       "https://th0juwozk1.execute-api.us-east-1.amazonaws.com/Production_portfolio";
