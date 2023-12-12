@@ -74,6 +74,17 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [ ] Implement API that only fires once for each session
 
+# Steps
+
+```
+npm run start
+npm run prod_build
+npm run deploy
+npm run invalidate
+npm run prod
+
+```
+
 # Ideas
 
 - Interactive road map with highlights or notes about my journey since 2020
