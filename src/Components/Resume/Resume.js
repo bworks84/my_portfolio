@@ -35,9 +35,7 @@ const Resume = () => {
                 <h2 className="section-title">Projects</h2>
                 <ul className="projects-list">
                   <li>
-                    <a href="https://resume.cloudyrob.com/">
-                      <em>Cloud Resume Challenge</em>
-                    </a>
+                    <em>Cloud Resume Challenge</em>
                   </li>
                   <ul>
                     <li className="list-item-description">

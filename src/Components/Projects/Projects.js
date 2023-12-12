@@ -27,9 +27,9 @@ const ProjectsContainer = () => {
         githubLink="https://github.com/bworks84/cloud-resume-challenge"
       />
       <Project
-        title="Example project"
-        description="Here's another project"
-        githubLink="https://github.com/bworks84/cloud-resume-challenge"
+        title="Todo List with AWS Amplify"
+        description="I built a quick todo list app using AWS Amplify and React."
+        githubLink="https://github.com/bworks84/Amplify_app"
       />
       <Project
         title="Example project"

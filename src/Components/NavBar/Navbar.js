@@ -31,13 +31,6 @@ const Navbar = () => {
           Resume
         </Link>
         <Link
-          to="/blog"
-          className="desktopMenuListItem"
-          activeClassName="active"
-        >
-          Blog
-        </Link>
-        <Link
           to="/contact"
           className="desktopMenuListItem right-align"
           activeClassName="active"

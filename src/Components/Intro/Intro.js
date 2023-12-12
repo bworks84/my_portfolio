@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Intro.css";
 import selfie from "../../assets/GCpic.png";
 import Footer from "../Footer/Footer";

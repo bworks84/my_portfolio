@@ -8,6 +8,7 @@ Welcome to my portfolio site! I'm building out a website to highlight what I've 
 - [About Me](#about-me)
 - [Projects](#projects)
 - [TaskList](#task-list)
+- [Tools](#tools)
 - [Attributes](#attributes)
 - [Notes](#notes)
 
@@ -65,9 +66,20 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [x] Updated footer to only appear on home page
 
-[ ] Update styling to account for different screen sizes
+[ ] Update styling to account for different screen sizes and test
+
+[ ] Install AWS amplify for tools/features to develop full-stack app
 
 [ ] Create new domain.
+
+# Tools
+
+Installed AWS Amplify for authentication and extra tools for this project.
+
+- Steps:
+
+1.  In root folder of react project, run `npm install -g @aws-amplify/cli`
+2.  Initialize Amplify in project by running `amplify init`
 
 # Ideas
 
