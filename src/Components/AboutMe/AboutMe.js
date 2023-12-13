@@ -13,8 +13,8 @@ const AboutMe = () => {
           <h1>About Me</h1>
           <p>
             I'm a veteran and student, currently working on cloud projects. I am
-            using this website as a way to present some of tasks I'm working on
-            while I study for the Linux+ and RedHat Certified System
+            using this website as a way to present some of the tasks I'm working
+            on while I study for the Linux+ and RedHat Certified System
             Administrator exams.
             <br />
             <br />
@@ -26,8 +26,8 @@ const AboutMe = () => {
             <br />
             <br />
             Now, I'm interested in building and securing cloud infrastructure
-            and cybersecurity. In my free time I enjoy learning and or building
-            new projects, exercising, mountain biking, and hiking.
+            and cybersecurity. In my free time I enjoy learning and building new
+            projects, exercising, mountain biking, and hiking.
           </p>
         </div>
       </div>

@@ -166,3 +166,51 @@ a {
 a:visited {
   color: inherit;
 }
+
+.center-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.architecture-container {
+  width: 100%;
+}
+
+.architecture-summary {
+  width: 70%;
+  font-size: large;
+}
+
+.architecture-container,
+.architecture-summary {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#architecture {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#crc-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: center;
+  color: #cd853f;
+  width: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .architecture-container,
+  .architecture-summary {
+    width: 90%;
+  }
+}

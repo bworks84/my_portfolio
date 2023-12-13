@@ -3,27 +3,10 @@ import React, { useEffect } from "react";
 import "./Resume.css";
 import GitHubLink from "../GitHubLink/GitHubLink";
 import LinkedInLink from "../LinkedIn/LinkedIn";
+import architecture from "../../assets/crc-arch.png";
 
 const Resume = () => {
-  useEffect(() => {
-    // Add an event listener to handle scroll behavior
-    const handleScroll = () => {
-      const title = document.querySelector(".page-title");
-
-      if (window.scrollY > 80) {
-        title.classList.add("fixed");
-      } else {
-        title.classList.remove("fixed");
-      }
-    };
-    // Attach the event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Remove the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className="center">
@@ -163,6 +146,36 @@ const Resume = () => {
               </ul>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="center-bottom">
+        <div className="architecture-container">
+          <img src={architecture} alt="architecture" id="architecture" />
+        </div>
+        <div className="architecture-summary">
+          <h1 id="crc-title">Under the hood</h1>
+          <p>
+            (This site is an extension of the{" "}
+            <a href="https://cloudresumechallenge.dev/">
+              Cloud Resume Challenge
+            </a>{" "}
+            by Forrest Brazeal.)
+          </p>
+          <br />
+          <p>
+            If you are interested to know, this site is built with React and
+            hosted on AWS. I have setup my own CI/CD pipeline using AWS CLI and
+            React scripts. The site is deployed to an S3 bucket and served via
+            CloudFront. I have also setup a Lambda function with Python to track
+            visitors to the site and store the data in a DynamoDB table. The
+            Lambda function is triggered by an API each time a new visitor views
+            the site. The website is hosted on a custom domain name that is
+            managed through Route53. I have also setup a CloudWatch alarm to
+            notify me if the site goes down and a CloudWatch dashboard to
+            monitor the health of the site. The use of IAM Roles are part of the
+            challenge that ensure permissions are set for each service to
+            interact with one another.
+          </p>
         </div>
       </div>
     </div>

@@ -32,9 +32,9 @@ const ProjectsContainer = () => {
         githubLink="https://github.com/bworks84/Amplify_app"
       />
       <Project
-        title="Example project"
-        description="Here's another project"
-        githubLink="https://github.com/bworks84/cloud-resume-challenge"
+        title="More Terraform"
+        description="Building full-stack app with Terraform"
+        githubLink="https://github.com/bworks84/Terraform-project"
       />
     </div>
   );
