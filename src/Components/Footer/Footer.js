@@ -8,38 +8,42 @@ const Footer = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // This is to prevent the API firing on every render
-    // console.log("useEffect called");
-    const apiCallMade = localStorage.getItem("apiCallMade");
+    // Check if the API call has been made in the current session
+    const apiCallMade = JSON.parse(sessionStorage.getItem("apiCallMade"));
 
     if (!apiCallMade) {
-      //initialise local storage
-      localStorage.setItem("apiCallMade", true);
-    }
-    console.log("apiCallMade:", apiCallMade);
+      // If API call has not been made in the current session, proceed with the API call
+      const apiUrl =
+        "https://th0juwozk1.execute-api.us-east-1.amazonaws.com/Production_portfolio";
 
-    const apiUrl =
-      "https://th0juwozk1.execute-api.us-east-1.amazonaws.com/Production_portfolio";
-
-    if (apiCallMade) {
-      console.log("API call already made");
-      // Trigger the API to increment the counter
       axios
         .post(apiUrl)
         .then((response) => {
           const parsedBody = JSON.parse(response.data.body);
           const newCount = parsedBody.count;
-          console.log("Parsed body:", parsedBody);
 
+          // Set the count in the state
           setCount(newCount);
           setLoading(false);
 
-          localStorage.setItem("apiCallMade", true);
+          // Store the count in localStorage
+          localStorage.setItem("count", JSON.stringify(newCount));
+
+          // Mark that the API call has been made in the current session
+          sessionStorage.setItem("apiCallMade", JSON.stringify(true));
         })
         .catch((error) => {
           console.error("Error fetching count:", error);
           setLoading(false);
         });
+    } else {
+      // If API call has been made in the current session, retrieve the count from localStorage
+      const storedCount = JSON.parse(localStorage.getItem("count"));
+
+      if (storedCount !== null) {
+        setCount(storedCount);
+        setLoading(false);
+      }
     }
   }, []);
 

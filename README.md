@@ -72,7 +72,7 @@ I'm a current student interested in AWS, Python, Linux, and cybersecurity.
 
 [x] Work on scripts in package.json to automate build, sync to s3 bucket, and invalidate CF distro
 
-[ ] Implement API that only fires once for each session
+[X] Implement API that only fires once for each session 12/12
 
 # Steps
 
@@ -86,6 +86,8 @@ npm run prod
 ```
 
 # Ideas
+
+- Add Cloud Resume Challenge diagram to show architecture
 
 - Interactive road map with highlights or notes about my journey since 2020
 
